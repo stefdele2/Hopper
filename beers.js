@@ -6,7 +6,7 @@ $(document).on('click',".back-button",function(){
 currentLocation = currentLocation.replace('/beers-','');
 currentLocation = currentLocation.replace('%20','');
 currentLocation = currentLocation.toLowerCase();
-  console.log(currentLocation);
+
         var arr =JSON.parse(localStorage.getItem('Likes'))
 
         
@@ -36,7 +36,7 @@ naam = naam.replace('Pils','');
 naam = naam.replace(' ','');
 naam = naam.replace(' ','');
 $(".hartje").addClass(naam);
-console.log(naam);
+
 
 $(document).on('click',".hartje",function(){
     var theClass = this.className;

@@ -116,3 +116,13 @@ $("#picprof").attr("src", fotolink);
 
 document.getElementById("voornaam2").innerHTML = localStorage.getItem("Voornaam");
 document.getElementById("achternaam2").innerHTML = localStorage.getItem("Achternaam"); 
+
+
+  $(document).on('click',".deleted",function(){
+      localStorage.setItem('Likes', "[]");
+      $('.beer').remove();
+  });
+
+
+
+

@@ -2,31 +2,30 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
-/* line 3, /Users/Stef/Desktop/hopper/main.scss */
-::-webkit-scrollbar {
-  display: none; }
-
-/* line 11, /Users/Stef/Desktop/hopper/main.scss */
+/* line 12, /Users/Stef/Desktop/hopper/main.scss */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-weight: 300; }
 
-/* line 17, /Users/Stef/Desktop/hopper/main.scss */
+/* line 18, /Users/Stef/Desktop/hopper/main.scss */
 body {
   color: white;
-  font-weight: 300; }
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
 
-/* line 21, /Users/Stef/Desktop/hopper/main.scss */
+/* line 26, /Users/Stef/Desktop/hopper/main.scss */
 .landing {
   background-color: white; }
 
-/* line 24, /Users/Stef/Desktop/hopper/main.scss */
+/* line 30, /Users/Stef/Desktop/hopper/main.scss */
 .wrapper {
   background: white; }
 
-/* line 30, /Users/Stef/Desktop/hopper/main.scss */
+/* line 36, /Users/Stef/Desktop/hopper/main.scss */
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -34,7 +33,7 @@ body {
   height: 400px;
   text-align: center; }
 
-/* line 37, /Users/Stef/Desktop/hopper/main.scss */
+/* line 43, /Users/Stef/Desktop/hopper/main.scss */
 .container h1 {
   font-size: 40px;
   -webkit-transition-duration: 1s;
@@ -42,13 +41,13 @@ body {
   -webkit-transition-timing-function: ease-in-put;
   transition-timing-function: ease-in-put; }
 
-/* line 45, /Users/Stef/Desktop/hopper/main.scss */
+/* line 51, /Users/Stef/Desktop/hopper/main.scss */
 form {
   padding: 20px 0;
   position: relative;
   z-index: 2; }
 
-/* line 50, /Users/Stef/Desktop/hopper/main.scss */
+/* line 56, /Users/Stef/Desktop/hopper/main.scss */
 form input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -68,13 +67,13 @@ form input {
   transition-duration: 0.25s;
   font-weight: 300; }
 
-/* line 70, /Users/Stef/Desktop/hopper/main.scss */
+/* line 76, /Users/Stef/Desktop/hopper/main.scss */
 form input:focus {
   background-color: white;
   width: 300px;
   color: black; }
 
-/* line 75, /Users/Stef/Desktop/hopper/main.scss */
+/* line 81, /Users/Stef/Desktop/hopper/main.scss */
 form button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -83,7 +82,6 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
@@ -91,15 +89,15 @@ form button {
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s; }
 
-/* line 91, /Users/Stef/Desktop/hopper/main.scss */
+/* line 96, /Users/Stef/Desktop/hopper/main.scss */
 form button:hover {
   background-color: #f5f7f9; }
 
-/* line 95, /Users/Stef/Desktop/hopper/main.scss */
+/* line 100, /Users/Stef/Desktop/hopper/main.scss */
 .hey2, .hey3 {
   display: none; }
 
-/* line 98, /Users/Stef/Desktop/hopper/main.scss */
+/* line 103, /Users/Stef/Desktop/hopper/main.scss */
 .hey4 {
   display: block; }
 
@@ -113,13 +111,13 @@ form button:hover {
 /*
   Globals
 */
-/* line 120, /Users/Stef/Desktop/hopper/main.scss */
+/* line 125, /Users/Stef/Desktop/hopper/main.scss */
 body {
   margin: 0;
   color: #353d46;
   font: 18px/27px 'Oxygen', sans-serif; }
 
-/* line 126, /Users/Stef/Desktop/hopper/main.scss */
+/* line 131, /Users/Stef/Desktop/hopper/main.scss */
 h1, h2, h3 {
   color: #FF6B6B;
   margin: 0 0 27px; }
@@ -127,7 +125,7 @@ h1, h2, h3 {
 /*
   Menu
 */
-/* line 131, /Users/Stef/Desktop/hopper/main.scss */
+/* line 136, /Users/Stef/Desktop/hopper/main.scss */
 nav#slide-menu {
   position: fixed;
   top: 0;
@@ -142,7 +140,7 @@ nav#slide-menu {
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms; }
-  /* line 147, /Users/Stef/Desktop/hopper/main.scss */
+  /* line 152, /Users/Stef/Desktop/hopper/main.scss */
   nav#slide-menu > ul {
     display: block;
     margin: 40px;
@@ -152,12 +150,12 @@ nav#slide-menu {
     -moz-transition: all 300ms;
     -webkit-transition: all 300ms;
     transition: all 300ms; }
-    /* line 158, /Users/Stef/Desktop/hopper/main.scss */
+    /* line 163, /Users/Stef/Desktop/hopper/main.scss */
     nav#slide-menu > ul li {
       color: white;
       padding: 6px 0;
       cursor: pointer; }
-    /* line 166, /Users/Stef/Desktop/hopper/main.scss */
+    /* line 171, /Users/Stef/Desktop/hopper/main.scss */
     nav#slide-menu > ul li:before {
       font-family: "ico";
       font-style: normal;
@@ -166,24 +164,24 @@ nav#slide-menu {
       display: inline-block;
       text-decoration: inherit;
       width: 1em;
-      color: #DD0D50;
+      color: #DD0D52;
       margin-right: 12px;
       text-align: center;
       font-variant: normal;
       font-size: 0.75em;
       text-transform: none;
       line-height: 1em; }
-    /* line 183, /Users/Stef/Desktop/hopper/main.scss */
+    /* line 188, /Users/Stef/Desktop/hopper/main.scss */
     nav#slide-menu > ul li.sep {
       margin-top: 7px;
       padding-top: 14px;
       border-top: 1px solid #6b7b8d; }
 
-/* line 193, /Users/Stef/Desktop/hopper/main.scss */
+/* line 198, /Users/Stef/Desktop/hopper/main.scss */
 body.menu-active nav#slide-menu {
   left: 0px; }
 
-/* line 194, /Users/Stef/Desktop/hopper/main.scss */
+/* line 199, /Users/Stef/Desktop/hopper/main.scss */
 body.menu-active nav#slide-menu ul {
   left: 0px;
   opacity: 1; }
@@ -191,7 +189,7 @@ body.menu-active nav#slide-menu ul {
 /*
   Content
 */
-/* line 200, /Users/Stef/Desktop/hopper/main.scss */
+/* line 205, /Users/Stef/Desktop/hopper/main.scss */
 div#content {
   position: fixed;
   top: 0;
@@ -210,7 +208,7 @@ div#content {
   -moz-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms; }
-  /* line 222, /Users/Stef/Desktop/hopper/main.scss */
+  /* line 227, /Users/Stef/Desktop/hopper/main.scss */
   div#content div.menu-trigger {
     z-index: 99;
     position: fixed;
@@ -224,7 +222,7 @@ div#content {
     -moz-transition: all 300ms;
     -webkit-transition: all 300ms;
     transition: all 300ms; }
-    /* line 237, /Users/Stef/Desktop/hopper/main.scss */
+    /* line 242, /Users/Stef/Desktop/hopper/main.scss */
     div#content div.menu-trigger:before {
       content: '\e801';
       display: inline-block;
@@ -240,20 +238,20 @@ div#content {
       text-transform: none;
       line-height: 36px; }
 
-/* line 257, /Users/Stef/Desktop/hopper/main.scss */
+/* line 262, /Users/Stef/Desktop/hopper/main.scss */
 body.menu-active div#content {
   left: 284px;
   border-radius: 7px 0 0 7px; }
 
-/* line 258, /Users/Stef/Desktop/hopper/main.scss */
+/* line 263, /Users/Stef/Desktop/hopper/main.scss */
 body.menu-active div#content .menu-trigger {
   left: 294px; }
 
-/* line 259, /Users/Stef/Desktop/hopper/main.scss */
+/* line 264, /Users/Stef/Desktop/hopper/main.scss */
 body.menu-active div#content .search-button {
   right: -294px; }
 
-/* line 261, /Users/Stef/Desktop/hopper/main.scss */
+/* line 266, /Users/Stef/Desktop/hopper/main.scss */
 .mainmenu {
   z-index: 10;
   position: fixed;
@@ -262,7 +260,7 @@ body.menu-active div#content .search-button {
   width: 100%;
   height: 60px; }
 
-/* line 269, /Users/Stef/Desktop/hopper/main.scss */
+/* line 274, /Users/Stef/Desktop/hopper/main.scss */
 .submenu {
   z-index: 10;
   background-color: #F4F6F5;
@@ -272,7 +270,7 @@ body.menu-active div#content .search-button {
   position: fixed;
   top: 60px; }
 
-/* line 278, /Users/Stef/Desktop/hopper/main.scss */
+/* line 283, /Users/Stef/Desktop/hopper/main.scss */
 .horizontal-scroll {
   overflow: hidden;
   overflow-x: scroll;
@@ -281,7 +279,7 @@ body.menu-active div#content .search-button {
   padding: 30px 0;
   padding-top: 21px; }
 
-/* line 288, /Users/Stef/Desktop/hopper/main.scss */
+/* line 293, /Users/Stef/Desktop/hopper/main.scss */
 .item {
   display: inline-block;
   width: 130px;
@@ -298,26 +296,26 @@ body.menu-active div#content .search-button {
   color: #C4D8D4;
   padding-top: 6px; }
 
-/* line 307, /Users/Stef/Desktop/hopper/main.scss */
+/* line 312, /Users/Stef/Desktop/hopper/main.scss */
 .item:hover {
   cursor: pointer;
   cursor: hand; }
 
-/* line 310, /Users/Stef/Desktop/hopper/main.scss */
+/* line 315, /Users/Stef/Desktop/hopper/main.scss */
 .itemactive {
   padding-top: 8px;
   background-color: #DD0D52;
   border: none;
   color: white; }
 
-/* line 317, /Users/Stef/Desktop/hopper/main.scss */
+/* line 322, /Users/Stef/Desktop/hopper/main.scss */
 .titel {
   font-family: 'Bitter', serif;
   text-align: center;
   font-size: 1.9em;
   padding-top: 15px; }
 
-/* line 323, /Users/Stef/Desktop/hopper/main.scss */
+/* line 328, /Users/Stef/Desktop/hopper/main.scss */
 .search-button {
   z-index: 33;
   font-size: 1.2em !important;
@@ -331,21 +329,21 @@ body.menu-active div#content .search-button {
   -webkit-transition: all 300ms;
   transition: all 300ms; }
 
-/* line 339, /Users/Stef/Desktop/hopper/main.scss */
+/* line 344, /Users/Stef/Desktop/hopper/main.scss */
 .maincontent {
   margin: 25px;
   margin-top: 140px;
   padding: 10px;
   padding-top: 20px; }
 
-/* line 345, /Users/Stef/Desktop/hopper/main.scss */
+/* line 350, /Users/Stef/Desktop/hopper/main.scss */
 .mainitem {
   height: 400px;
   padding: 15px !important;
   padding-top: 0 !important;
   margin-bottom: 5px !important; }
 
-/* line 354, /Users/Stef/Desktop/hopper/main.scss */
+/* line 359, /Users/Stef/Desktop/hopper/main.scss */
 .maininhoud {
   padding: 10px;
   background-color: white;
@@ -353,14 +351,14 @@ body.menu-active div#content .search-button {
   border-radius: 5px;
   box-shadow: 9px 9px 16px -9px rgba(0, 0, 0, 0.75); }
 
-/* line 363, /Users/Stef/Desktop/hopper/main.scss */
+/* line 368, /Users/Stef/Desktop/hopper/main.scss */
 .maininhoudtext {
   margin-top: -25px;
   font-family: 'Bitter', serif;
   font-size: 1.3em;
   text-align: center; }
 
-/* line 369, /Users/Stef/Desktop/hopper/main.scss */
+/* line 374, /Users/Stef/Desktop/hopper/main.scss */
 .hartje {
   color: #DD0D52;
   font-size: 1.6em !important;
@@ -368,7 +366,7 @@ body.menu-active div#content .search-button {
   margin-left: 5px;
   z-index: 99999; }
 
-/* line 377, /Users/Stef/Desktop/hopper/main.scss */
+/* line 382, /Users/Stef/Desktop/hopper/main.scss */
 .ruit {
   background-color: #DD0D52;
   width: 45px;
@@ -379,7 +377,7 @@ body.menu-active div#content .search-button {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
 
-/* line 388, /Users/Stef/Desktop/hopper/main.scss */
+/* line 393, /Users/Stef/Desktop/hopper/main.scss */
 .ruitklein {
   background-color: #9D0036;
   width: 45px;
@@ -388,7 +386,7 @@ body.menu-active div#content .search-button {
   margin-right: -45px;
   margin-top: -15px; }
 
-/* line 396, /Users/Stef/Desktop/hopper/main.scss */
+/* line 401, /Users/Stef/Desktop/hopper/main.scss */
 .driehoek {
   width: 45px;
   height: 5px;
@@ -403,7 +401,7 @@ body.menu-active div#content .search-button {
   -o-transform: skew(20deg);
   background: #9D0036; }
 
-/* line 411, /Users/Stef/Desktop/hopper/main.scss */
+/* line 416, /Users/Stef/Desktop/hopper/main.scss */
 .percentage {
   font-family: 'Bitter', serif;
   font-weight: 700;
@@ -416,16 +414,16 @@ body.menu-active div#content .search-button {
   width: 45px;
   height: 40px; }
 
-/* line 423, /Users/Stef/Desktop/hopper/main.scss */
+/* line 428, /Users/Stef/Desktop/hopper/main.scss */
 .naamprofiel {
-  margin: 30px;
+  margin: 20px;
   margin-top: 20px;
   font-family: 'Bitter', serif;
   font-size: 1.7em;
   color: white;
   word-break: break-all; }
 
-/* line 433, /Users/Stef/Desktop/hopper/main.scss */
+/* line 438, /Users/Stef/Desktop/hopper/main.scss */
 .fotohoofd {
   margin-top: 40px;
   margin-left: 90px;
@@ -438,7 +436,7 @@ body.menu-active div#content .search-button {
   height: 100px;
   /* width and height can be anything, as long as they're equal */ }
 
-/* line 446, /Users/Stef/Desktop/hopper/main.scss */
+/* line 451, /Users/Stef/Desktop/hopper/main.scss */
 .landinglogo {
   margin-top: 10px;
   height: 200px;
@@ -446,12 +444,12 @@ body.menu-active div#content .search-button {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 453, /Users/Stef/Desktop/hopper/main.scss */
+/* line 458, /Users/Stef/Desktop/hopper/main.scss */
 .logo {
   max-width: 100%;
   max-height: 100%; }
 
-/* line 457, /Users/Stef/Desktop/hopper/main.scss */
+/* line 462, /Users/Stef/Desktop/hopper/main.scss */
 .hey {
   margin-top: 20px;
   font-family: 'Bitter', serif;
@@ -459,7 +457,7 @@ body.menu-active div#content .search-button {
   font-weight: 700 !important;
   font-size: 2.8em !important; }
 
-/* line 465, /Users/Stef/Desktop/hopper/main.scss */
+/* line 470, /Users/Stef/Desktop/hopper/main.scss */
 .loginbutton {
   color: white;
   width: 400px;
@@ -470,12 +468,12 @@ body.menu-active div#content .search-button {
   padding-top: 9px;
   margin-top: 20px; }
 
-/* line 476, /Users/Stef/Desktop/hopper/main.scss */
+/* line 481, /Users/Stef/Desktop/hopper/main.scss */
 .loginbutton:hover {
   background-color: #9D0036;
   border-radius: 50px; }
 
-/* line 485, /Users/Stef/Desktop/hopper/main.scss */
+/* line 490, /Users/Stef/Desktop/hopper/main.scss */
 .placeholder {
   text-align: left;
   width: 400px;
@@ -483,39 +481,39 @@ body.menu-active div#content .search-button {
   border-bottom-style: solid;
   border-bottom-color: lightgrey; }
 
-/* line 493, /Users/Stef/Desktop/hopper/main.scss */
+/* line 498, /Users/Stef/Desktop/hopper/main.scss */
 .wrong {
   margin-top: 5px;
   display: none; }
 
-/* line 497, /Users/Stef/Desktop/hopper/main.scss */
+/* line 502, /Users/Stef/Desktop/hopper/main.scss */
 .wrong2 {
   display: block; }
 
-/* line 501, /Users/Stef/Desktop/hopper/main.scss */
+/* line 506, /Users/Stef/Desktop/hopper/main.scss */
 .fotohoofd {
   overflow: hidden;
   display: flex;
   justify-content: center; }
 
-/* line 506, /Users/Stef/Desktop/hopper/main.scss */
+/* line 511, /Users/Stef/Desktop/hopper/main.scss */
 #pic1 {
   max-height: 100%; }
 
-/* line 510, /Users/Stef/Desktop/hopper/main.scss */
+/* line 515, /Users/Stef/Desktop/hopper/main.scss */
 #picprof {
   max-height: 100%; }
 
-/* line 513, /Users/Stef/Desktop/hopper/main.scss */
+/* line 518, /Users/Stef/Desktop/hopper/main.scss */
 .voornaam, .achternaam {
   text-transform: uppercase; }
 
-/* line 517, /Users/Stef/Desktop/hopper/main.scss */
+/* line 522, /Users/Stef/Desktop/hopper/main.scss */
 .linklist, .linklist:hover {
   text-decoration: none;
   color: white; }
 
-/* line 521, /Users/Stef/Desktop/hopper/main.scss */
+/* line 526, /Users/Stef/Desktop/hopper/main.scss */
 .itemfoto {
   display: table-cell;
   vertical-align: middle;
@@ -525,20 +523,20 @@ body.menu-active div#content .search-button {
   margin-left: auto;
   margin-top: 20px; }
 
-/* line 531, /Users/Stef/Desktop/hopper/main.scss */
+/* line 536, /Users/Stef/Desktop/hopper/main.scss */
 .itemfoto img {
   max-width: 80%;
   max-height: 80%;
   height: auto; }
 
-/* line 540, /Users/Stef/Desktop/hopper/main.scss */
+/* line 545, /Users/Stef/Desktop/hopper/main.scss */
 .mainprofile {
   padding: 0;
   margin: 0;
   margin-top: 100px;
   height: calc(100% - 100px); }
 
-/* line 547, /Users/Stef/Desktop/hopper/main.scss */
+/* line 552, /Users/Stef/Desktop/hopper/main.scss */
 .profilelijst {
   width: 100%;
   min-height: calc(100% - 350px);
@@ -547,15 +545,15 @@ body.menu-active div#content .search-button {
   border-top-left-radius: 10px;
   overflow-x: hidden; }
 
-/* line 558, /Users/Stef/Desktop/hopper/main.scss */
+/* line 563, /Users/Stef/Desktop/hopper/main.scss */
 .mainmenuprofile {
   background-color: #C4D8D4; }
 
-/* line 561, /Users/Stef/Desktop/hopper/main.scss */
+/* line 566, /Users/Stef/Desktop/hopper/main.scss */
 .triggerprofile {
   background: #C4D8D4 !important; }
 
-/* line 566, /Users/Stef/Desktop/hopper/main.scss */
+/* line 571, /Users/Stef/Desktop/hopper/main.scss */
 .fotoprofile {
   text-align: center;
   width: 200px;
@@ -565,25 +563,26 @@ body.menu-active div#content .search-button {
   border-width: 8px;
   border-color: #F4F6F5; }
 
-/* line 576, /Users/Stef/Desktop/hopper/main.scss */
+/* line 581, /Users/Stef/Desktop/hopper/main.scss */
 .profile {
   height: 350px;
   width: 100%;
   z-index: 999;
   background-color: #C4D8D4; }
 
-/* line 583, /Users/Stef/Desktop/hopper/main.scss */
+/* line 588, /Users/Stef/Desktop/hopper/main.scss */
 .profilenaam {
   color: #F4F6F5;
   margin-top: 40px;
   text-align: center; }
 
-/* line 589, /Users/Stef/Desktop/hopper/main.scss */
+/* line 594, /Users/Stef/Desktop/hopper/main.scss */
 .mainbeer {
   margin-left: 45px;
-  margin-right: 45px; }
+  margin-right: 45px;
+  padding-top: 20px; }
 
-/* line 593, /Users/Stef/Desktop/hopper/main.scss */
+/* line 599, /Users/Stef/Desktop/hopper/main.scss */
 .beer {
   padding-top: 15px;
   width: 100%;
@@ -593,7 +592,7 @@ body.menu-active div#content .search-button {
   border-bottom-width: 1px;
   border-bottom-color: lightgrey; }
 
-/* line 603, /Users/Stef/Desktop/hopper/main.scss */
+/* line 609, /Users/Stef/Desktop/hopper/main.scss */
 .cirkelke {
   float: left;
   height: 80px;
@@ -604,18 +603,18 @@ body.menu-active div#content .search-button {
   margin-top: 5px;
   border-color: gray; }
 
-/* line 613, /Users/Stef/Desktop/hopper/main.scss */
+/* line 619, /Users/Stef/Desktop/hopper/main.scss */
 .beerinfo {
   float: right;
   height: 90px;
   width: calc(100% - 90px);
   padding-left: 20px; }
 
-/* line 620, /Users/Stef/Desktop/hopper/main.scss */
+/* line 626, /Users/Stef/Desktop/hopper/main.scss */
 .biernaam {
   float: left; }
 
-/* line 623, /Users/Stef/Desktop/hopper/main.scss */
+/* line 629, /Users/Stef/Desktop/hopper/main.scss */
 .bierpercentage {
   margin-left: 5px;
   margin-top: 2px;
@@ -623,11 +622,11 @@ body.menu-active div#content .search-button {
   color: gray;
   float: left; }
 
-/* line 630, /Users/Stef/Desktop/hopper/main.scss */
+/* line 636, /Users/Stef/Desktop/hopper/main.scss */
 .infobier {
   margin-top: 30px; }
 
-/* line 633, /Users/Stef/Desktop/hopper/main.scss */
+/* line 639, /Users/Stef/Desktop/hopper/main.scss */
 .cirkel2 {
   margin-left: 10px;
   float: left;
@@ -637,19 +636,19 @@ body.menu-active div#content .search-button {
   border-width: 1px;
   border-radius: 50%; }
 
-/* line 643, /Users/Stef/Desktop/hopper/main.scss */
+/* line 649, /Users/Stef/Desktop/hopper/main.scss */
 .cirkel2:hover {
   color: #DD0D52; }
 
-/* line 646, /Users/Stef/Desktop/hopper/main.scss */
+/* line 652, /Users/Stef/Desktop/hopper/main.scss */
 .fa-trash-o {
   margin-left: 7px; }
 
-/* line 651, /Users/Stef/Desktop/hopper/main.scss */
+/* line 657, /Users/Stef/Desktop/hopper/main.scss */
 .fa-trash-o:hover {
   color: #DD0D52; }
 
-/* line 655, /Users/Stef/Desktop/hopper/main.scss */
+/* line 661, /Users/Stef/Desktop/hopper/main.scss */
 .removetext {
   color: gray;
   padding-top: 2px;
@@ -657,18 +656,18 @@ body.menu-active div#content .search-button {
   font-size: 0.7em;
   margin-left: 47px; }
 
-/* line 663, /Users/Stef/Desktop/hopper/main.scss */
+/* line 669, /Users/Stef/Desktop/hopper/main.scss */
 .tester {
   display: none; }
 
-/* line 666, /Users/Stef/Desktop/hopper/main.scss */
+/* line 672, /Users/Stef/Desktop/hopper/main.scss */
 .cirkelke {
   background-color: white;
   margin-left: auto;
   margin-right: auto;
   justify-content: center; }
 
-/* line 672, /Users/Stef/Desktop/hopper/main.scss */
+/* line 678, /Users/Stef/Desktop/hopper/main.scss */
 .cirkelke img {
   margin-top: 9px;
   display: block;
@@ -676,50 +675,50 @@ body.menu-active div#content .search-button {
   margin-right: auto;
   max-height: 70%; }
 
-/* line 680, /Users/Stef/Desktop/hopper/main.scss */
+/* line 686, /Users/Stef/Desktop/hopper/main.scss */
 #map-canvas {
   height: 100%;
   width: 100%; }
 
-/* line 687, /Users/Stef/Desktop/hopper/main.scss */
+/* line 693, /Users/Stef/Desktop/hopper/main.scss */
 .hu {
   margin-top: 60px;
   width: 50%;
   height: 100px; }
 
-/* line 692, /Users/Stef/Desktop/hopper/main.scss */
+/* line 698, /Users/Stef/Desktop/hopper/main.scss */
 .wa {
   height: 100%; }
 
-/* line 695, /Users/Stef/Desktop/hopper/main.scss */
+/* line 701, /Users/Stef/Desktop/hopper/main.scss */
 .wa2 {
   margin-top: 70px;
   height: calc(100% - 90px); }
 
-/* line 701, /Users/Stef/Desktop/hopper/main.scss */
+/* line 707, /Users/Stef/Desktop/hopper/main.scss */
 .itemfoto2 {
   height: 60%;
   display: flex;
   justify-content: center; }
 
-/* line 709, /Users/Stef/Desktop/hopper/main.scss */
+/* line 715, /Users/Stef/Desktop/hopper/main.scss */
 .profielfoto {
   display: block;
   margin: auto; }
 
-/* line 713, /Users/Stef/Desktop/hopper/main.scss */
+/* line 719, /Users/Stef/Desktop/hopper/main.scss */
 .wrappy {
   height: 40%;
   padding: 30px;
   padding-bottom: 10px;
   position: relative; }
 
-/* line 719, /Users/Stef/Desktop/hopper/main.scss */
+/* line 725, /Users/Stef/Desktop/hopper/main.scss */
 .maininhoudtext2 {
   text-align: left;
   font-size: 1.8em; }
 
-/* line 723, /Users/Stef/Desktop/hopper/main.scss */
+/* line 729, /Users/Stef/Desktop/hopper/main.scss */
 .lijnne {
   margin-top: 20px;
   border-style: solid;
@@ -727,11 +726,11 @@ body.menu-active div#content .search-button {
   border-bottom-width: 1px;
   border-bottom-color: lightgrey; }
 
-/* line 730, /Users/Stef/Desktop/hopper/main.scss */
+/* line 736, /Users/Stef/Desktop/hopper/main.scss */
 .mdtext {
   margin-top: 20px; }
 
-/* line 734, /Users/Stef/Desktop/hopper/main.scss */
+/* line 740, /Users/Stef/Desktop/hopper/main.scss */
 .linkk {
   position: absolute;
   bottom: 37px;
@@ -739,139 +738,63 @@ body.menu-active div#content .search-button {
   color: #DD0D52;
   text-decoration: none; }
 
-/* line 743, /Users/Stef/Desktop/hopper/main.scss */
+/* line 749, /Users/Stef/Desktop/hopper/main.scss */
 .linkk:hover {
   color: #DD0D52;
   text-decoration: none; }
 
-/* line 748, /Users/Stef/Desktop/hopper/main.scss */
+/* line 754, /Users/Stef/Desktop/hopper/main.scss */
 .back-button {
   position: absolute;
   bottom: 70px;
   font-size: 1.7em;
   float: left; }
 
-/* line 755, /Users/Stef/Desktop/hopper/main.scss */
+/* line 761, /Users/Stef/Desktop/hopper/main.scss */
 .back-button:hover {
   color: #DD0D52; }
 
-/* line 758, /Users/Stef/Desktop/hopper/main.scss */
+/* line 764, /Users/Stef/Desktop/hopper/main.scss */
 .hoha {
   display: block; }
 
-/* line 762, /Users/Stef/Desktop/hopper/main.scss */
+/* line 768, /Users/Stef/Desktop/hopper/main.scss */
 .linky {
   height: 80px;
   width: 80px; }
 
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0); }
-  10%, 30%, 50%, 70% {
-    transform: translateX(-5px); }
-  20%, 40%, 60%, 80% {
-    transform: translateX(5px); } }
-
-/* line 781, /Users/Stef/Desktop/hopper/main.scss */
-* {
-  box-sizing: border-box; }
-
-/* line 787, /Users/Stef/Desktop/hopper/main.scss */
-.containerq {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-  background: white;
-  padding: 1em;
-  border: 1px solid #d4d7e1;
-  box-shadow: 9px 9px 16px -9px rgba(0, 0, 0, 0.75);
-  border-radius: 3px;
-  overflow: hidden; }
-
-/* line 804, /Users/Stef/Desktop/hopper/main.scss */
-.input-query {
-  width: 100%;
-  padding: 0.5em;
-  border: 1px solid #d4d7e1;
-  border-radius: 3px;
-  font-size: 1em; }
-
-/* line 811, /Users/Stef/Desktop/hopper/main.scss */
-.input-query:focus {
-  outline: none !important; }
-
-/* line 818, /Users/Stef/Desktop/hopper/main.scss */
-.list-wrap {
-  height: 100%;
-  margin-top: 0.4em;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-/* line 825, /Users/Stef/Desktop/hopper/main.scss */
-.list {
-  max-height: 220px; }
-
-/* line 829, /Users/Stef/Desktop/hopper/main.scss */
-.list-item {
-  font-size: 0.9em;
-  padding: 0.5em 0.8em;
-  border-bottom: 1px solid #d4d7e1;
-  border-top: 1px solid white;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%; }
-
-/* line 840, /Users/Stef/Desktop/hopper/main.scss */
-.list-item:first-child {
-  border-top: none; }
-
-/* line 843, /Users/Stef/Desktop/hopper/main.scss */
-.list-item:last-child {
-  border-bottom: none; }
-
-/* line 847, /Users/Stef/Desktop/hopper/main.scss */
-.list-item-link {
-  color: #444;
-  text-decoration: none; }
-
-/* line 852, /Users/Stef/Desktop/hopper/main.scss */
-.list-item-link:hover {
-  color: #DD0D52;
-  text-decoration: none; }
-
-/* line 857, /Users/Stef/Desktop/hopper/main.scss */
-.item-list-subtext {
-  font-size: 85%;
-  color: grey; }
-
-/* line 861, /Users/Stef/Desktop/hopper/main.scss */
-.item-list-subtext:before {
-  content: ' / ';
-  color: #DD0D52;
-  font-size: 1.2em; }
-
-/* line 868, /Users/Stef/Desktop/hopper/main.scss */
-.list-item--disable {
-  text-align: center;
-  border-bottom: none;
-  animation: shake 0.6s;
-  color: #9da1b1; }
-
-/* line 875, /Users/Stef/Desktop/hopper/main.scss */
+/* line 775, /Users/Stef/Desktop/hopper/main.scss */
 .verwijzing {
   text-decoration: none;
   color: white; }
 
-/* line 880, /Users/Stef/Desktop/hopper/main.scss */
+/* line 780, /Users/Stef/Desktop/hopper/main.scss */
 .verwijzing:hover {
   text-decoration: none;
   color: #DD0D52 !important; }
+
+/* line 785, /Users/Stef/Desktop/hopper/main.scss */
+.informatie {
+  height: 30px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgray;
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 0.85em; }
+
+/* line 798, /Users/Stef/Desktop/hopper/main.scss */
+.deleted {
+  color: #DD0D52;
+  float: right;
+  margin-right: 20px;
+  font-weight: 700; }
+
+/* line 804, /Users/Stef/Desktop/hopper/main.scss */
+.deleted:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

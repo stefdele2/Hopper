@@ -1,70 +1,40 @@
 ---
 ---
 <!DOCTYPE HTML>
-
 <html>
 <head>
-
 {% include components/head.html %}
 </head>
-    <body>
-<!-- Navigation -->
-{% include components/menus.html %}
-<!-- Content panel -->
-<div id="content">
-	<div class="menu-trigger triggerprofile"></div>
+<body>
+{% include components/sidebar.html %}
+    <div id="content">
+    <div class="menu-trigger triggerprofile"></div>
 	<div class="mainmenu mainmenuprofile">
     <div class="titel">Hopper</div>
-    </div>
-
-
-<div class="maincontent mainprofile">
-    
-    
-    
-    <div class="profile">
-        <div class="item itemactive tester"></div>
-
-            <div class="fotohoofd fotoprofile">
-        <img id="picprof"  src="">
-    </div>
-    <div class="naamprofiel profilenaam"> 
-        <div id="voornaam2"  class="voornaam">Voornaam
         </div>
-        <div id="achternaam2" class="achternaam">achternaam
+        <div class="maincontent mainprofile">
+            <div class="profile">
+                <div class="item itemactive tester"></div>
+                <div class="fotohoofd fotoprofile">
+                    <img id="picprof"  src="">
+                </div>
+                <div class="naamprofiel profilenaam"> 
+                    <div id="voornaam2"  class="voornaam">Voornaam</div>
+                    <div id="achternaam2" class="achternaam">achternaam</div>
+                </div>
+            </div>
+    
+    
+            <div class="profilelijst">
+                <div class="informatie"> Mijn Likes
+                    <div class="deleted">Alles Verwijderen</div>
+                </div>
+                <div id="mainbeer" class="mainbeer"></div>
+            </div>
         </div>
-        </div>
     </div>
-    
-    
-    <div class="profilelijst">
-        
-        <div id="mainbeer" class="mainbeer">
-           
-            
-            
-
-           
-    </div>
-    </div>
-    
-    
-    
-    
-    
-    
-
-</div>
-    
-</div>
-        
-       
-        
-        
-        </body>
-     <script src="jquery.js"></script>
+</body>
+    <script src="jquery.js"></script>
     <script src="profile.js"></script>
     <script src="main.js"></script>
-    
-    
 </html>

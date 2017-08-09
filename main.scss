@@ -1,8 +1,9 @@
 
-$rood:#C31E50;
-::-webkit-scrollbar { 
-    display: none; 
-}
+$rood:#DD0D52;
+$grey:#353d46;
+$back:#1D222B;
+$shadow:#556270;
+
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
@@ -17,9 +18,14 @@ $rood:#C31E50;
 body {
   color: white;
   font-weight: 300;
+        height: 100%;
+    width: 100%;
+     overflow: hidden;
+
 }
 .landing {
     background-color: white;
+
 }
 .wrapper {
   background: white;
@@ -80,7 +86,6 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
@@ -119,7 +124,7 @@ form button:hover {
 
 body {
 	margin: 0;
-	color: #353d46 ;
+	color: $grey;
 	font: 18px/27px 'Oxygen', sans-serif;
 }
 
@@ -138,7 +143,7 @@ nav#slide-menu {
 	width: 100%;
 	max-width: 284px;
 	height: 100%;
-    background-color: #1D222B;
+    background-color: $back;
 
 	-moz-transition: all 300ms;
 	-webkit-transition: all 300ms;
@@ -171,7 +176,7 @@ nav#slide-menu {
 			display: inline-block;
 			text-decoration: inherit;
 			width: 1em;
-			color: #DD0D50;
+			color: $rood;
 			margin-right: 12px;
 			text-align: center;
 			font-variant: normal;
@@ -183,7 +188,7 @@ nav#slide-menu {
 		li.sep { 
 			margin-top: 7px; 
 			padding-top: 14px; 
-			border-top: 1px solid lighten(#556270, 10%); 
+			border-top: 1px solid lighten($shadow, 10%); 
 		}
 
 	
@@ -211,9 +216,9 @@ div#content {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 
-	-moz-box-shadow: -3px 0 6px darken(#556270, 5%);
-	-webkit-box-shadow: -3px 0 6px darken(#556270, 5%);
-	box-shadow: -3px 0 6px darken(#556270, 5%);
+	-moz-box-shadow: -3px 0 6px darken($shadow, 5%);
+	-webkit-box-shadow: -3px 0 6px darken($shadow, 5%);
+	box-shadow: -3px 0 6px darken($shadow, 5%);
 
 	-moz-transition: all 300ms;
 	-webkit-transition: all 300ms;
@@ -309,7 +314,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 .itemactive {
     padding-top:  8px; 
-     background-color: #DD0D52;
+     background-color: $rood;
     border: none;
     color:white;
 }
@@ -367,7 +372,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 .hartje {
-    color: #DD0D52;
+    color: $rood;
 font-size: 1.6em!important;
     margin-top: 5px;
     margin-left: 5px;
@@ -375,7 +380,7 @@ font-size: 1.6em!important;
 }
 
 .ruit{
-    background-color: #DD0D52;
+    background-color: $rood;
     width: 45px;
     height: 45px;
     float: right;
@@ -422,7 +427,7 @@ font-size: 1.6em!important;
 }
 .naamprofiel {
     
-    margin: 30px;
+    margin: 20px;
     margin-top: 20px;
      font-family: 'Bitter', serif;
     font-size: 1.7em;
@@ -467,7 +472,7 @@ font-size: 1.6em!important;
      width: 400px;
     height: 50px;
      font-size: 18px;
-     background-color: #DD0D52;
+     background-color: $rood;
     border-radius: 50px;
     padding-top: 9px;
     margin-top: 20px;
@@ -589,6 +594,7 @@ display: block;
 .mainbeer {
     margin-left: 45px;
     margin-right: 45px;
+    padding-top: 20px;
 }
 .beer {
     padding-top: 15px;
@@ -641,7 +647,7 @@ display: block;
 
 }
 .cirkel2:hover{
-     color: #DD0D52;
+     color: $rood;
 }
 .fa-trash-o {
     margin-left: 7px;
@@ -649,7 +655,7 @@ display: block;
 }
 
 .fa-trash-o:hover {
-      color: #DD0D52;
+      color: $rood;
 }
 
 .removetext {
@@ -736,12 +742,12 @@ display: block;
     bottom: 37px;
     right: 20px;
 
-    color: #DD0D52;
+    color: $rood;
     text-decoration: none;
 }
 
 .linkk:hover {
-    color: #DD0D52;
+    color: $rood;
     text-decoration: none;
 }
 
@@ -753,7 +759,7 @@ display: block;
 }
 
 .back-button:hover {
-    color:  #DD0D52;
+    color:  $rood;
 }
 .hoha {
     display: block;
@@ -766,112 +772,6 @@ display: block;
 
 
 
-
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70% {
-    transform: translateX(-5px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(5px);
-  }
-}
-* {
-  box-sizing: border-box;
-}
-
-
-
-.containerq {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-  background: white;
-  padding: 1em;
-  border: 1px solid #d4d7e1;
-    box-shadow: 9px 9px 16px -9px rgba(0,0,0,0.75);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.input-query {
-  width: 100%;
-  padding: 0.5em;
-  border: 1px solid #d4d7e1;
-  border-radius: 3px;
-  font-size: 1em;
-}
-.input-query:focus {
-           outline: none !important;
-
-
-}
-
-
-.list-wrap {
-    height: 100%;
-  margin-top: 0.4em;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.list {
-  max-height: 220px;
-}
-
-.list-item {
-  font-size: 0.9em;
-  padding: 0.5em 0.8em;
-  border-bottom: 1px solid #d4d7e1;
-  border-top: 1px solid white;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%;
-}
-.list-item:first-child {
-  border-top: none;
-}
-.list-item:last-child {
-  border-bottom: none;
-}
-
-.list-item-link {
-  color: #444;
-  text-decoration: none;
-}
-
-.list-item-link:hover {
-  color: #DD0D52;
-  text-decoration: none;
-}
-
-.item-list-subtext {
-  font-size: 85%;
-  color: grey;
-}
-.item-list-subtext:before {
-  content: ' / ';
-    color: #DD0D52;
-    font-size: 1.2em;
-}
-
-
-.list-item--disable {
-  text-align: center;
-  border-bottom: none;
-  animation: shake 0.6s;
-  color: #9da1b1;
-}
-
 .verwijzing {
     text-decoration: none;
     color: white;
@@ -879,5 +779,33 @@ display: block;
 
 .verwijzing:hover {
     text-decoration: none;
-    color: #DD0D52 !important;
+    color: $rood !important;
 }
+
+.informatie {
+    height: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+.deleted {
+    color: $rood;
+    float: right;
+    margin-right: 20px;
+    font-weight: 700;
+}
+.deleted:hover {
+    cursor: pointer;
+}
+
+
+
+
+

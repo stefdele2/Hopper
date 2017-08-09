@@ -7,38 +7,19 @@
 
 {% include components/head.html %}
 </head>
-    <body class="body">
+<body class="body">
 <!-- Navigation -->
-{% include components/menus.html %}
+{% include components/sidebar.html %}
 <!-- Content panel -->
-<div id="content">
-	<div class="menu-trigger"></div>
-	<div class="mainmenu">
-    <div class="titel">Hopper</div>
+    <div id="content">
+	   {% include components/topmenu.html %}
+        <div id="map-canvas"></div>
     </div>
+</body>
 
-
-
-  <div id="map-canvas">
-
- 
-
- 
-
-    </div>
-
-    
-</div>
-        
-       
-        
-        
-        </body>
-     <script src="jquery.js"></script>
-    
-    	<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ0SS5STf9k58qNrNR5p8NgL9_Zq9aqbw&callback">
-</script>
+    <script src="jquery.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ0SS5STf9k58qNrNR5p8NgL9_Zq9aqbw&callback">
+    </script>
     <script src="main.js"></script>
     <script src="taxi.js"></script>
 </html>
