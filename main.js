@@ -6,9 +6,6 @@ if(("username" in localStorage === false) && ("password" in localStorage ===fals
 
 
 
-
-
-
 (function() {
 	var $body = document.body
 	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
